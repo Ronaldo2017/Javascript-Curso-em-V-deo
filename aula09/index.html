@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando DOM</title>
+
+    <style>
+        body{
+            background: rgb(112, 112, 133);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Sou Desenvolvedor WEB</p>
+    <p><strong>A partir de janeiro de 2022, reinicio a 
+        carreira em Desenvolvimento WEB
+    </strong></p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var dev = document.getElementsByTagName('p')[0]
+       /* var d = document.getElementById('msg')
+        d.style.background = 'grenn'
+        //d.innerHTML = 'Estou aguardando...'*/
+        var d = document.getElementsByName('msg')[0]
+        d.innerHTML = "Olá"
+    </script>
+</body>
+</html>
